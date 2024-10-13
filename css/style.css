@@ -6,22 +6,21 @@
 
 body{
     background: #000;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
     
 }
 
 .note-app{
     background: rgb(46, 39, 39);
-    height: 70vh;
     width: 80%;
     border-radius: 16px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 16px;
+    grid-template-columns: repeat(auto-fill,minmax(300px,auto));
+    gap: 32px;
     padding: 32px;
     overflow: auto;
     position: relative;
@@ -108,7 +107,7 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 4px;
+    padding: 8px;
     background: gray;
 }
 
