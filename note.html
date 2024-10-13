@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note taking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="logo">NB Note</h1>
+    <div id="noteapp" class="note-app">
+        <div id="addnote" class="note">
+            +
+        </div>
+        <div id="writeingboard" class="writeingboard">
+            <h2>New Note</h2>
+            <textarea id="noteinput" placeholder="What is on your mind?" autofocus></textarea>
+            <div class="buttons">
+                <button id="createnote">Create Note</button>
+                <button id="closing">Close</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

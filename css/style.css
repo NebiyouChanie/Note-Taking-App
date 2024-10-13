@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.note-app{
+    background: rgb(46, 39, 39);
+    height: 70vh;
+    width: 80%;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    padding: 32px;
+    overflow: auto;
+    position: relative;
+}
+
+.note{
+    height: 25vh;
+    width: 100%;
+    background: rgb(231, 229, 229);
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.note:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    color: gray;
+}
+
+.writeingboard{
+    width: 60%;
+    height: 35vh;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 16px;
+    padding: 16px;
+    display: none;
+    z-index: 10;
+}
+
+.writeingboard h2{
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+#noteinput{
+    resize: none;
+    background:rgb(209, 207, 207);
+    height: 20vh;
+    width: 100%;
+    padding: 8px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+#createnote,#closing {
+    background: purple;
+    padding: 8px 16px 8px;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+#closing{
+    color: purple;
+    background: white;
+    border: 1px solid purple;
+}
+
+#creatednote{
+    padding: 16px;
+    overflow: hidden;
+}
+
+.notebutton{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 4px;
+    background: gray;
+}
+
+.edit,.deleterr{
+    background:plum;
+    padding: 2px 16px;
+    color: purple;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.reading{
+    padding:32px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 50vh;
+    width: 60%;
+    border-radius: 32px;
+    background: rgb(207, 207, 83);
+    overflow: auto;        
+}
+
+.logo{
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.noteclose{
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
